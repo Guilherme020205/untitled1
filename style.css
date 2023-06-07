@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+    height: 100vh;
+    background-image: url('fundo.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+nav.menuLateral {
+    width: 60px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgba(8, 8, 8, 0.13);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+nav.menuLateral:hover {
+    width: 300px;
+}
+
+.btnExpandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btnExpandir>i {
+    color: aliceblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.itensDoMenu {
+    transition: 1s;
+}
+
+ul li.itensDoMenu:hover {
+    background: rgba(160, 20, 130, 0.74);
+}
+
+ul li.itensDoMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.itensDoMenu a .txtLink {
+    margin-left: 20px;
+}
+
+ul li.itensDoMenu a .icon>i {
+    font-size: 30px;
+}
